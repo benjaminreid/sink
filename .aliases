@@ -1,0 +1,43 @@
+# edit bash profile
+alias profile:edit="subl ~/.bash_profile"
+
+# source profile so after editing changes can be pulled in
+alias profile:update="source ~/.bash_profile"
+
+# get a daily update of commits
+alias dailyupdate="simple daily-git-summary"
+
+# copies the ssh public key
+alias copyssh="pbcopy < ~/.ssh/id_rsa.pub"
+
+# clear screen
+alias cl="clear"
+
+# ls
+alias la="ls -al"
+alias ll="ls -l"
+
+# up
+alias u="cd ../"
+
+# git aliases
+alias gpl="git pull"
+alias gcm="git commit -m"
+alias gpsh="git push"
+alias gs="git status"
+alias ga="git add ."
+alias gas="ga;gs;"
+alias gd="git difftool"
+alias gk="gitk --all"
+alias gpr="git remote prune origin"
+alias gb="git branch"
+alias gc="git checkout"
+alias gdrb="git push origin --delete"
+alias gdb="git branch -D"
+alias gm="git merge"
+function gnb {
+  git branch $1 && git checkout $1
+}
+
+# postgres
+alias pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
