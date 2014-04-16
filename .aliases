@@ -10,6 +10,11 @@ alias dailyupdate="simple daily-git-summary"
 # copies the ssh public key
 alias copyssh="pbcopy < ~/.ssh/id_rsa.pub"
 
+# ssh pair
+function sshpair() {
+  cat ~/.ssh/id_rsa.pub | ssh $1 'cat - >> ~/.ssh/authorized_keys'
+}
+
 # clear screen
 alias cl="clear"
 
