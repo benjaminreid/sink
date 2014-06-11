@@ -43,6 +43,10 @@ alias gm="git merge"
 function gnb {
   git branch $1 && git checkout $1
 }
+# track a git branch to upstream
+function gtr {
+  git push -u origin $1
+}
 
 # postgres
 alias pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
