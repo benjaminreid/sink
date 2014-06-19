@@ -53,3 +53,8 @@ alias pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.lo
 
 # rails server
 alias rs="bundle exec rails s"
+
+# install ies
+function ie {
+  curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | env IEVMS_VERSIONS="$1" bash
+}
