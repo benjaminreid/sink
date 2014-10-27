@@ -25,6 +25,9 @@ alias ll="ls -l"
 # up
 alias u="cd ../"
 
+# bundle
+alias be="bundle exec"
+
 # git aliases
 alias gpl="git pull"
 alias gcm="git commit -v"
