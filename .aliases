@@ -27,7 +27,7 @@ alias u="cd ../"
 
 # git aliases
 alias gpl="git pull"
-alias gcm="git commit -m"
+alias gcm="git commit -v"
 alias gpsh="git push"
 alias gs="git status"
 alias ga="git add ."
@@ -58,3 +58,7 @@ alias rs="bundle exec rails s"
 function ie {
   curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | env IEVMS_VERSIONS="$1" bash
 }
+
+alias i="ionic"
+
+alias serve="python -m SimpleHTTPServer 8080"
