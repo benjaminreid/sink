@@ -63,3 +63,6 @@ function ie {
 }
 
 alias serve="python -m SimpleHTTPServer 8080"
+
+# turns normal cat into ccat (cat with highlighting)
+alias cat="ccat"
