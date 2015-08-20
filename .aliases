@@ -36,7 +36,8 @@ alias gs="git status"
 alias ga="git add ."
 alias gas="ga;gs;"
 alias gd="git difftool"
-alias gk="gitk --all"
+alias gm="git mergetool"
+alias gk="gitup"
 alias gpr="git remote prune origin"
 alias gb="git branch"
 alias gc="git checkout"
@@ -62,7 +63,11 @@ function ie {
   curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | env IEVMS_VERSIONS="$1" bash
 }
 
+alias i="ionic"
+
 alias serve="python -m SimpleHTTPServer 8080"
 
 # turns normal cat into ccat (cat with highlighting)
 alias cat="ccat"
+
+alias vargrant="vagrant"
