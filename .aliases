@@ -1,6 +1,9 @@
 # edit bash profile
 alias profile:edit="subl ~/.bash_profile"
 
+# alias for react
+alias react="react-native"
+
 # source profile so after editing changes can be pulled in
 alias profile:update="source ~/.bash_profile"
 
