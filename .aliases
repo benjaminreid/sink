@@ -4,6 +4,9 @@ alias profile:edit="subl ~/.bash_profile"
 # alias for react
 alias react="react-native"
 
+# open simulator
+alias simulator="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
+
 # source profile so after editing changes can be pulled in
 alias profile:update="source ~/.bash_profile"
 
